@@ -1,0 +1,8 @@
+/* css/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .bg_blur {
+  @apply absolute h-4 w-3 bg-red-400;
+} */
