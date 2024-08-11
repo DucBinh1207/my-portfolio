@@ -45,155 +45,174 @@
       <!-- Background -->
       <div class="bg-gradient fixed left-0 top-0 z-[-1] h-[100vh] w-full">
         <div
-          class="blur-background blur-bg animate-first_animate_bg absolute h-[clamp(400px,20vw,60vw)] w-[calc(clamp(400px,30vw,70vw)*1.1)] rounded-[900px]"
+          class="blur-background tablet:block absolute hidden h-[clamp(400px,20vw,60vw)] w-[calc(clamp(400px,30vw,70vw)*1.1)] animate-first_animate_bg rounded-[900px] blur-bg"
         ></div>
 
         <div
-          class="blur-background blur-bg animate-second_animate_bg absolute h-[clamp(400px,20vw,60vw)] w-[calc(clamp(400px,30vw,70vw)*1.1)] rounded-[900px]"
+          class="blur-background absolute h-[clamp(400px,20vw,60vw)] w-[calc(clamp(400px,30vw,70vw)*1.1)] animate-second_animate_bg rounded-[900px] blur-bg"
         ></div>
 
         <div
-          class="blur-background blur-bg animate-third_animate_bg absolute h-[clamp(400px,20vw,60vw)] w-[calc(clamp(400px,30vw,70vw)*1.1)] rounded-[900px]"
+          class="blur-background absolute h-[clamp(400px,20vw,60vw)] w-[calc(clamp(400px,30vw,70vw)*1.1)] animate-third_animate_bg rounded-[900px] blur-bg"
         ></div>
       </div>
 
       <!-- Avatar -->
       <div
-        class="avatar fixed left-[100px] top-[50px] z-10 flex h-[calc(100%-6rem)] w-[400px] flex-col justify-between rounded-[36px] bg-bgColor p-[50px]"
+        class="avatar fixed left-[8rem] top-[5rem] z-10 flex h-[calc(100%-10rem)] w-[400px] flex-col justify-between rounded-[36px] bg-bgColor"
       >
-        <div class="avatar-info flex w-full flex-col gap-[10px]">
-          <div class="avatar-logo flex justify-start gap-[20px]">
-            <img src="./images/avatar-icon.svg" class="h-[75px] w-[75px]" />
+        <div
+          class="relative flex h-[100%] w-[100%] flex-col justify-between p-[5rem]"
+        >
+          <div class="avatar-info flex w-full flex-col gap-[10px]">
+            <div class="avatar-logo flex justify-start gap-[20px]">
+              <img src="./images/avatar-icon.svg" class="h-[75px] w-[75px]" />
+              <p
+                class="font-Syne text-[36px] font-bold leading-[38.16px] text-common"
+              >
+                Tran Duc Binh
+              </p>
+            </div>
+
+            <img
+              src="./images/avatar-img.jpg"
+              class="avatar-image h-[300px] w-[300px] rounded-[30px]"
+            />
+          </div>
+
+          <div class="avatar-specialization flex flex-col gap-[5px]">
             <p
-              class="font-Syne text-[36px] font-bold leading-[38.16px] text-common"
+              class="font-Syne text-[15px] font-normal leading-[15px] text-common"
             >
-              Tran Duc Binh
+              Specialization
             </p>
+            <h3
+              class="font-Syne text-[20px] font-bold leading-[24px] text-common"
+            >
+              Frontend developer
+            </h3>
           </div>
 
-          <img
-            src="./images/avatar-img.jpg"
-            class="avatar-image h-[300px] w-[300px] rounded-[30px]"
-          />
-        </div>
-
-        <div class="avatar-specialization flex flex-col gap-[5px]">
-          <p
-            class="font-Syne text-[15px] font-normal leading-[15px] text-common"
-          >
-            Specialization
-          </p>
-          <h3
-            class="font-Syne text-[20px] font-bold leading-[24px] text-common"
-          >
-            Frontend developer
-          </h3>
-        </div>
-
-        <div class="avatar-based-in flex flex-col gap-[5px]">
-          <p
-            class="font-Syne text-[15px] font-normal leading-[15px] text-common"
-          >
-            Based in:
-          </p>
-          <h3
-            class="font-Syne text-[20px] font-bold leading-[24px] text-common"
-          >
-            Ha Tinh, Viet Nam
-          </h3>
-        </div>
-
-        <div class="avatar-contact flex flex-col gap-[10px]">
-          <div class="avatar-social">
-            <ul class="flex gap-[1rem]">
-              <li
-                class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
-              >
-                <i class="fa-brands fa-discord text-common"></i>
-              </li>
-              <li
-                class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
-              >
-                <i class="fa-brands fa-facebook text-common"></i>
-              </li>
-              <li
-                class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
-              >
-                <i class="fa-brands fa-instagram text-common"></i>
-              </li>
-              <li
-                class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
-              >
-                <i class="fa-brands fa-github text-common"></i>
-              </li>
-              <li
-                class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
-              >
-                <i class="fa-brands fa-tiktok text-common"></i>
-              </li>
-            </ul>
+          <div class="avatar-based-in flex flex-col gap-[5px]">
+            <p
+              class="font-Syne text-[15px] font-normal leading-[15px] text-common"
+            >
+              Based in:
+            </p>
+            <h3
+              class="font-Syne text-[20px] font-bold leading-[24px] text-common"
+            >
+              Ha Tinh, Viet Nam
+            </h3>
           </div>
-          <div
-            class="avatar-work h-[60px] w-[300px] cursor-pointer rounded-[26px] bg-gradient-to-r from-[#E4B8BF] to-[#CEC4EF] text-center font-Syne text-[20px] font-bold leading-[60px] text-black"
-          >
-            Let's Work Together!
+
+          <div class="avatar-contact flex flex-col gap-[10px]">
+            <div class="avatar-social">
+              <ul class="flex gap-[1rem]">
+                <li
+                  class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
+                >
+                  <i class="fa-brands fa-discord text-common"></i>
+                </li>
+                <li
+                  class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
+                >
+                  <i class="fa-brands fa-facebook text-common"></i>
+                </li>
+                <li
+                  class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
+                >
+                  <i class="fa-brands fa-instagram text-common"></i>
+                </li>
+                <li
+                  class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
+                >
+                  <i class="fa-brands fa-github text-common"></i>
+                </li>
+                <li
+                  class="flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-[22px] border border-solid border-[#303033]"
+                >
+                  <i class="fa-brands fa-tiktok text-common"></i>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="avatar-work h-[60px] w-[300px] cursor-pointer rounded-[26px] bg-gradient-to-r from-[#E4B8BF] to-[#CEC4EF] text-center font-Syne text-[20px] font-bold leading-[60px] text-black"
+            >
+              Let's Work Together!
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Header -->
       <div
-        class="header fixed right-0 top-[50px] z-50 flex w-[calc(100%-500px)] justify-between pl-[50px] pr-[100px]"
+        class="header fixed bottom-auto left-auto right-0 top-[5rem] z-50 flex h-[5rem] w-[calc(100%-480px)] justify-between bg-transparent pl-[5rem] pr-[8rem] backdrop-filter-none"
       >
         <div class="header-nav">
           <ul class="flex gap-[10px]">
             <li
-              class="h-[60px] rounded-[26px] border border-solid border-[rgba(255,255,255,0.3)]"
+              class="group inline-flex rounded-[26px] border border-solid border-[rgba(255,255,255,0.3)] backdrop-blur-[6px]"
             >
               <a
                 href="#"
-                class="px-[24px] font-Syne text-[20px] font-bold leading-[60px] text-[#E9E9F1]"
+                class="h-[50px] px-[20px] font-Syne text-[16px] font-bold leading-[50px] text-[#E9E9F1] transition-all duration-300 ease-in-out group-hover:text-[#E9E9F1] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"
                 >Home</a
               >
             </li>
-            <li class="h-[60px]">
+            <li
+              class="group inline-flex border border-solid border-transparent backdrop-blur-[6px]"
+            >
               <a
                 href="#"
-                class="px-[24px] font-Syne text-[20px] font-bold leading-[60px] text-[#8B8A91]"
+                class="h-[50px] px-[20px] font-Syne text-[16px] font-bold leading-[50px] text-[#8B8A91] transition-all duration-300 ease-in-out group-hover:text-[#E9E9F1] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"
                 >Portfolio</a
               >
             </li>
-            <li class="h-[60px]">
+            <li
+              class="group inline-flex border border-solid border-transparent backdrop-blur-[6px]"
+            >
               <a
                 href="#"
-                class="px-[24px] font-Syne text-[20px] font-bold leading-[60px] text-[#8B8A91]"
+                class="h-[50px] px-[20px] font-Syne text-[16px] font-bold leading-[50px] text-[#8B8A91] transition-all duration-300 ease-in-out group-hover:text-[#E9E9F1] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"
                 >About Me</a
               >
             </li>
-            <li class="h-[60px]">
+            <li
+              class="group inline-flex border border-solid border-transparent backdrop-blur-[6px]"
+            >
               <a
                 href="#"
-                class="px-[24px] font-Syne text-[20px] font-bold leading-[60px] text-[#8B8A91]"
+                class="h-[50px] px-[20px] font-Syne text-[16px] font-bold leading-[50px] text-[#8B8A91] transition-all duration-300 ease-in-out group-hover:text-[#E9E9F1] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"
                 >Resume</a
               >
             </li>
-            <li class="h-[60px]">
+            <li
+              class="group inline-flex border border-solid border-transparent backdrop-blur-[6px]"
+            >
               <a
                 href="#"
-                class="px-[24px] font-Syne text-[20px] font-bold leading-[60px] text-[#8B8A91]"
+                class="h-[50px] px-[20px] font-Syne text-[16px] font-bold leading-[50px] text-[#8B8A91] transition-all duration-300 ease-in-out group-hover:text-[#E9E9F1] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"
                 >Contact</a
               >
             </li>
           </ul>
         </div>
-        <div class="header-action flex gap-[29px]">
-          <div class="dark-mode flex h-[60px] cursor-pointer items-center">
-            <i class="fa-regular fa-sun text-[22px] text-[#A1A1AF]"></i>
+        <div class="header-action flex gap-[1rem]">
+          <div
+            class="dark-mode group flex h-[5rem] w-[5rem] cursor-pointer items-center justify-center backdrop-blur-[10px]"
+          >
+            <i
+              class="fa-regular fa-sun text-[1.8rem] text-[#A1A1AF] group-hover:text-[#E9E9F1] group-hover:transition-all group-hover:duration-300 group-hover:ease-in-out"
+            ></i>
           </div>
           <div
-            class="talk-btn h-[60px] w-[178] cursor-pointer rounded-[26px] bg-gradient-to-r from-[#E4B8BF] to-[#CEC4EF] px-[24px] text-center font-Syne text-[20px] font-bold leading-[60px] text-black"
+            class="talk-btn h-[5rem] w-auto cursor-pointer rounded-[22px] bg-gradient-to-r from-[#E4B8BF] to-[#CEC4EF] px-[2rem] text-center font-Syne text-[20px] font-bold leading-[60px] text-black"
           >
-            <a href="#" class="flex gap-[8px]">
+            <a
+              href="#"
+              class="flex h-[50px] gap-[8px] text-[16px] font-bold leading-[50px]"
+            >
               <p>Let's Talk</p>
               <i class="fa-regular fa-comment-dots flex items-center"></i
             ></a>
@@ -202,70 +221,855 @@
       </div>
 
       <!-- Content -->
-      <div class="content-wraper z-20 flex-1 pl-[500px]">
-        <div class="home relative h-[calc(100vh-6rem)]">
-          <div class="home-content absolute bottom-0 pl-[50px] pr-[60px]">
+      <div class="content-wraper z-20 flex-1 pl-[480px]">
+        <!-- Home -->
+        <div class="home relative h-[calc(100vh-8rem)]">
+          <div
+            class="home-content absolute bottom-[2rem] w-[100%] pl-[50px] pr-[80px]"
+          >
             <div
-              class="inline-block h-[38px] rounded-[17px] border border-solid border-[#303033] px-[15px] text-[#C7C6D3]"
+              class="inline-block h-[34px] rounded-[17px] border border-solid border-[#303033] px-[14px] text-[13px] text-[#C7C6D3]"
             >
               <i
-                class="fa-solid fa-splotch mr-[10px] text-[13px] text-[#C7C6D3]"
+                class="fa-solid fa-splotch mr-[1rem] h-[1.1rem] w-[1.1rem] text-[11px] text-[#C7C6D3]"
               ></i>
-              <span
-                class="font-Syne text-[15px] font-bold leading-[38px] text-[#C7C6D3]"
-                >Let's Meet!
+              <span class="font-Syne font-bold leading-[33px] text-[#C7C6D3]"
+                >Let's meet!
               </span>
             </div>
 
             <h1
-              class="mb-[48px] mt-[22px] max-w-[760px] bg-gradient-to-r from-[#E1BAC5] to-[#CEC4EF] bg-clip-text font-Syne text-[80px] font-bold leading-[96px] text-transparent"
+              class="mb-[51px] mt-[19px] max-w-[760px] bg-gradient-to-r from-[#E1BAC5] to-[#CEC4EF] bg-clip-text font-Syne text-[7rem] font-bold leading-[84px] text-transparent"
             >
               I'm Tran Duc Binh - Front End Developer.
             </h1>
 
             <div class="flex gap-[10px]">
               <div
-                class="h-[60px] cursor-pointer rounded-[26px] border border-solid border-[#303033] px-[24px] text-[#C7C6D3]"
+                class="h-[5rem] w-auto cursor-pointer rounded-[26px] border border-solid border-[#303033] px-[2rem] text-[#C7C6D3]"
               >
                 <span
-                  class="font-Syne text-[20px] font-bold leading-[60px] text-[#C7C6D3]"
-                  >My Works
+                  class="font-Syne text-[16px] font-bold leading-[50px] text-[#C7C6D3]"
+                  ><a href="">My Works</a>
                 </span>
+
                 <i
-                  class="fa-solid fa-grip ml-[6px] text-[20px] text-[#C7C6D3]"
+                  class="fa-solid fa-grip ml-[6px] text-[18px] text-[#C7C6D3]"
                 ></i>
               </div>
-              <div class="h-[60px] cursor-pointer px-[24px] text-[#C7C6D3]">
+              <div
+                class="h-[5rem] w-auto cursor-pointer px-[2rem] text-[#C7C6D3]"
+              >
                 <span
-                  class="font-Syne text-[20px] font-bold leading-[60px] text-[#8B8A91]"
-                  >Download CV
+                  class="font-Syne text-[16px] font-bold leading-[50px] text-[#8B8A91]"
+                  ><a href="">Download CV</a>
                 </span>
+
                 <i
-                  class="fa-solid fa-download ml-[6px] text-[20px] text-[#8B8A91]"
+                  class="fa-solid fa-download ml-[6px] text-[18px] text-[#8B8A91]"
                 ></i>
               </div>
             </div>
           </div>
+
+          <div
+            class="rotating-btn absolute bottom-[2rem] right-[8rem] h-auto w-auto text-white"
+          >
+            <a
+              href="#"
+              class="relative inline-flex h-[120px] w-[120px] items-center justify-center text-[2.2rem] text-white"
+            >
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 120 120"
+                style="
+                  translate: none;
+                  rotate: none;
+                  transform: translate3d(0px, 0px, 0px) rotate(138.547deg);
+                "
+                xml:space="preserve"
+                class="animate-rotation top-0] translate-z-0 absolute left-0 translate-x-0 translate-y-0 rotate-[138.547deg] transform"
+                data-value="360"
+              >
+                <defs>
+                  <path
+                    id="textPath"
+                    d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z"
+                  ></path>
+                </defs>
+                <g>
+                  <use xlink:href="#textPath" fill="none"></use>
+                  <text>
+                    <textPath
+                      xlink:href="#textPath"
+                      class="fill-white font-Syne text-[1.2rem] font-bold uppercase tracking-wider text-white"
+                    >
+                      Scroll for More * Scroll for More *
+                    </textPath>
+                  </text>
+                </g>
+              </svg>
+              <i class="fa-solid fa-arrow-down text-[22px]"></i
+            ></a>
+          </div>
         </div>
-        <div class="portfolio pt-[160px]">
-          <div class="pl-[50px] pr-[60px]">
+
+        <!-- Portfolio -->
+        <div class="portfolio pt-[150px]">
+          <div class="pl-[5rem] pr-[8rem]">
             <div
-              class="inline-block h-[38px] rounded-[17px] border border-solid border-[#303033] px-[15px] text-[#C7C6D3]"
+              class="inline-block h-[34px] rounded-[17px] border border-solid border-[#303033] px-[14px] text-[13px] text-[#C7C6D3]"
             >
               <i
-                class="fa-solid fa-splotch mr-[10px] text-[13px] text-[#C7C6D3]"
+                class="fa-solid fa-splotch mr-[1rem] h-[1.1rem] w-[1.1rem] text-[11px] text-[#C7C6D3]"
               ></i>
-              <span
-                class="font-Syne text-[15px] font-bold leading-[38px] text-[#C7C6D3]"
+              <span class="font-Syne font-bold leading-[33px] text-[#C7C6D3]"
                 >Portfolio
               </span>
             </div>
 
             <h2
-              class="mb-[48px] mt-[22px] max-w-[760px] bg-gradient-to-r from-[#E1BAC5] to-[#CEC4EF] bg-clip-text font-Syne text-[80px] font-bold leading-[96px] text-transparent"
+              class="mt-[22px] max-w-[760px] bg-gradient-to-r from-[#E1BAC5] to-[#CEC4EF] bg-clip-text font-Syne text-[54px] font-bold leading-[64.8px] text-transparent"
             >
               Check out my featured projects
             </h2>
+          </div>
+          <div class="mt-[50px] h-auto w-[100%] pl-[2.5rem] pr-[5.5rem]">
+            <div class="aspect-[1/1] w-[100%]">
+              <div class="grid-cols-form grid-rows-form grid h-[100%] w-[100%]">
+                <!-- gap-x-[50px] gap-y-[50px]  -->
+
+                <div class="relative mt-[50px] px-[25px]">
+                  <a
+                    href="https://github.com/DucBinh1207/todo-client-react.git"
+                    target="_blank"
+                    class="bg-portfolio1 inline-block h-[100%] w-[100%] rounded-[36px] bg-cover bg-center"
+                  ></a>
+                  <div class="portfolio-section">
+                    <div class="portfolio-tag bg-white text-black">React</div>
+                    <div class="portfolio-tag bg-white text-black">
+                      Tailwind
+                    </div>
+                  </div>
+                </div>
+                <div class="relative mt-[50px] px-[25px]">
+                  <a
+                    href="https://animated-blancmange-658619.netlify.app/"
+                    target="_blank"
+                    class="bg-portfolio2 inline-block h-[100%] w-[100%] rounded-[36px] bg-cover bg-center"
+                  ></a>
+                  <div class="portfolio-section">
+                    <div class="portfolio-tag bg-black text-white">React</div>
+                    <div class="portfolio-tag bg-black text-white">
+                      Tailwind
+                    </div>
+                  </div>
+                </div>
+                <div class="relative mt-[50px] px-[25px]">
+                  <a
+                    href="https://guileless-fenglisu-538f7f.netlify.app/"
+                    target="_blank"
+                    class="bg-portfolio3 inline-block h-[100%] w-[100%] rounded-[36px] bg-cover bg-center"
+                  ></a>
+                  <div class="portfolio-section">
+                    <div class="portfolio-tag bg-black text-white">React</div>
+                    <div class="portfolio-tag bg-black text-white">
+                      Tailwind
+                    </div>
+                  </div>
+                </div>
+                <div class="relative mt-[50px] px-[25px]">
+                  <a
+                    href="https://github.com/DucBinh1207/react-hook-form-ex.git"
+                    target="_blank"
+                    class="bg-portfolio4 inline-block h-[100%] w-[100%] rounded-[36px] bg-cover bg-center"
+                  ></a>
+                  <div class="portfolio-section">
+                    <div class="portfolio-tag bg-white text-black">React</div>
+                    <div class="portfolio-tag bg-white text-black">
+                      Tailwind
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="about-me pt-[150px]">
+          <div class="pl-[5rem] pr-[8rem]">
+            <div
+              class="inline-block h-[34px] rounded-[17px] border border-solid border-[#303033] px-[14px] text-[13px] text-[#C7C6D3]"
+            >
+              <i
+                class="fa-solid fa-splotch mr-[1rem] h-[1.1rem] w-[1.1rem] text-[11px] text-[#C7C6D3]"
+              ></i>
+              <span class="font-Syne font-bold leading-[33px] text-[#C7C6D3]"
+                >About me
+              </span>
+            </div>
+
+            <h2
+              class="mt-[22px] max-w-[760px] bg-gradient-to-r from-[#E1BAC5] to-[#CEC4EF] bg-clip-text font-Syne text-[54px] font-bold leading-[64.8px] text-transparent"
+            >
+              Turning complex problems into simple product
+            </h2>
+          </div>
+
+          <div class="pl-[2.5rem] pr-[5.5rem]">
+            <div class="flex w-[100%]">
+              <div class="mt-[50px] w-[33.33333334%] px-[25px]">
+                <div class="about-item">
+                  <div class="about-item-number">0</div>
+                  <div class="about-item-text">Happy clients</div>
+                </div>
+              </div>
+              <div class="mt-[50px] w-[33.33333334%] px-[25px]">
+                <div class="about-item">
+                  <div class="about-item-number">0</div>
+                  <div class="about-item-text">Years of experience</div>
+                </div>
+              </div>
+              <div class="mt-[50px] w-[33.33333334%] px-[25px]">
+                <div class="about-item">
+                  <div class="about-item-number">3+</div>
+                  <div class="about-item-text">Projects done</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pl-[2.5rem] pr-[5.5rem]">
+            <div class="flex w-full">
+              <div class="mt-[50px] w-[66.66666667%] px-[25px] pt-[9px]">
+                <p
+                  class="mb-[21px] font-Syne text-[22px] font-normal leading-[30.9px] text-[#C7C6D3]"
+                >
+                  I wonder if I've been changed in the night? Let me think. Was
+                  I the same when I got up this morning? I almost think I can
+                  remember feeling a little different. But if I'm not the same,
+                  the
+                  <a href="#" class="group relative inline-block">
+                    next question
+                    <span
+                      class="abosolute bottom-0 left-0 z-[0] block h-[0.1px] w-full transform bg-[#8B8A91]"
+                    ></span>
+                    <span
+                      class="abosolute bottom-0 left-0 z-[1] block h-[0.1px] w-full origin-left scale-x-0 transform bg-[#C7C6D3] transition-transform duration-300 group-hover:scale-x-100"
+                    ></span>
+                  </a>
+                  is 'Who in the world am I?' Ah, that's the great puzzle!
+                </p>
+
+                <p
+                  class="font-Syne text-[22px] font-normal leading-[30.9px] text-[#C7C6D3]"
+                >
+                  Be what you would seem to be - or, if you'd like it put more
+                  simply - never imagine yourself not to be otherwise than what
+                  it might appear to others that what you were or
+                  <a href="#" class="group relative inline-block"
+                    >might have been
+                    <span
+                      class="abosolute bottom-0 left-0 z-[0] block h-[0.1px] w-full transform bg-[#8B8A91]"
+                    ></span>
+                    <span
+                      class="abosolute bottom-0 left-0 z-[1] block h-[0.1px] w-full origin-left scale-x-0 transform bg-[#C7C6D3] transition-transform duration-300 group-hover:scale-x-100"
+                    ></span>
+                  </a>
+                  was not otherwise than what you had been would have appeared
+                  to them to be otherwise.
+                </p>
+
+                <div class="mt-[31px]">
+                  <a
+                    href="#"
+                    class="leading-[50px]text-black inline-flex h-[5rem] w-auto cursor-pointer items-center rounded-[22px] bg-gradient-to-r from-[#E4B8BF] to-[#CEC4EF] px-[2rem] text-center font-Syne text-[16px] font-bold text-black"
+                    >Download CV
+                    <i
+                      class="fa-solid fa-download ml-[6px] text-[18px] text-black"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="mt-[50px] flex w-[33.33333333%] flex-col gap-[30px] px-[25px] pt-[16px]"
+              >
+                <div class="flex flex-col gap-[4px]">
+                  <h6
+                    class="text-[1.5rem] font-normal leading-[15px] text-[#C7C6D3]"
+                  >
+                    Name
+                  </h6>
+                  <span
+                    class="text-[1.8rem] font-bold leading-[21.6px] text-[#e9e9f1]"
+                    >Tran Duc Binh</span
+                  >
+                </div>
+                <div class="flex flex-col gap-[4px]">
+                  <h6
+                    class="text-[1.5rem] font-normal leading-[15px] text-[#C7C6D3]"
+                  >
+                    Phone
+                  </h6>
+                  <span
+                    class="text-[1.8rem] font-bold leading-[21.6px] text-[#e9e9f1]"
+                    >+84-833-120-701</span
+                  >
+                </div>
+                <div class="flex flex-col gap-[4px]">
+                  <h6
+                    class="text-[1.5rem] font-normal leading-[15px] text-[#C7C6D3]"
+                  >
+                    Email
+                  </h6>
+                  <span
+                    class="text-[1.8rem] font-bold leading-[21.6px] text-[#e9e9f1]"
+                    >ducbinh120701@gmail.com</span
+                  >
+                </div>
+                <div class="flex flex-col gap-[4px]">
+                  <h6
+                    class="text-[1.5rem] font-normal leading-[15px] text-[#C7C6D3]"
+                  >
+                    Location
+                  </h6>
+                  <span
+                    class="text-[1.8rem] font-bold leading-[21.6px] text-[#e9e9f1]"
+                    >Ha Tinh, Viet Nam</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pl-[2.5rem] pr-[5.5rem]">
+            <div class="grid-cols-form grid-rows-formAbout grid w-full">
+              <div class="mt-[50px] px-[25px]">
+                <div class="about-item flex flex-col bg-black p-0">
+                  <div class="p-[50px]">
+                    <h4 class="font-Syne text-[3rem] font-bold leading-[36px]">
+                      Frontend development
+                    </h4>
+                    <div class="mb-[23px] mt-[8px]">
+                      <div class="about-tag-section">
+                        <div class="about-tag bg-transparent text-white">
+                          React
+                        </div>
+                        <div class="about-tag bg-transparent text-white">
+                          Tailwind
+                        </div>
+                      </div>
+                    </div>
+                    <span class="text-[1.8rem] font-normal leading-[25.2px]"
+                      >I work with HTML/CSS, Framer and WordPress.</span
+                    >
+                  </div>
+                  <div class="w-full flex-grow overflow-hidden">
+                    <img
+                      src="https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp"
+                      alt=""
+                      class="object-fit h-full w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-[50px] px-[25px]">
+                <div class="about-item bg-black p-0">
+                  <div class="p-[50px]">
+                    <h4 class="font-Syne text-[3rem] font-bold leading-[36px]">
+                      Digital art and graphic design
+                    </h4>
+                    <div class="mb-[23px] mt-[8px]">
+                      <div class="about-tag-section">
+                        <div class="about-tag bg-transparent text-white">
+                          React
+                        </div>
+                        <div class="about-tag bg-transparent text-white">
+                          Tailwind
+                        </div>
+                      </div>
+                    </div>
+                    <span class="text-[1.8rem] font-normal leading-[25.2px]"
+                      >I use Adobe Photoshop, Fresco and Blender to create
+                      illustrations and 3D renders for my clients and
+                      stocks.</span
+                    >
+                  </div>
+
+                  <div class="w-full flex-grow overflow-hidden">
+                    <img
+                      src="https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp"
+                      alt=""
+                      class="object-fit h-full w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-[50px] px-[25px]">
+                <div class="about-item bg-black p-0">
+                  <div class="p-[50px]">
+                    <h4 class="font-Syne text-[3rem] font-bold leading-[36px]">
+                      SEO/Digital marketing solutions
+                    </h4>
+                    <div class="mb-[23px] mt-[8px]">
+                      <div class="about-tag-section">
+                        <div class="about-tag bg-transparent text-white">
+                          React
+                        </div>
+                        <div class="about-tag bg-transparent text-white">
+                          Tailwind
+                        </div>
+                      </div>
+                    </div>
+                    <span class="text-[1.8rem] font-normal leading-[25.2px]"
+                      >Social media content plans, media monitoring, email and
+                      text messaging and search engine optimization.</span
+                    >
+                  </div>
+                  <div class="w-full flex-grow overflow-hidden">
+                    <img
+                      src="https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp"
+                      alt=""
+                      class="object-fit h-full w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-[50px] px-[25px]">
+                <div class="about-item bg-black p-0">
+                  <div class="p-[50px]">
+                    <h4 class="font-Syne text-[3rem] font-bold leading-[36px]">
+                      Brand identity
+                    </h4>
+                    <div class="mb-[23px] mt-[8px]">
+                      <div class="about-tag-section">
+                        <div class="about-tag bg-transparent text-white">
+                          React
+                        </div>
+                        <div class="about-tag bg-transparent text-white">
+                          Tailwind
+                        </div>
+                      </div>
+                    </div>
+                    <span class="text-[1.8rem] font-normal leading-[25.2px]"
+                      >I help my clients to develop a personality and brand
+                      voice, design the brand look and logo.</span
+                    >
+                  </div>
+                  <div class="w-full flex-grow overflow-hidden">
+                    <img
+                      src="https://mixdesign.club/themeforest/braxton/img/services/1200x900_s01.webp"
+                      alt=""
+                      class="object-fit h-full w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume -->
+
+        <div class="resume pb-[20px] pt-[150px]">
+          <div class="mb-[146px] pl-[5rem] pr-[8rem]">
+            <div
+              class="inline-block h-[34px] rounded-[17px] border border-solid border-[#303033] px-[14px] text-[13px] text-[#C7C6D3]"
+            >
+              <i
+                class="fa-solid fa-splotch mr-[1rem] h-[1.1rem] w-[1.1rem] text-[11px] text-[#C7C6D3]"
+              ></i>
+              <span class="font-Syne font-bold leading-[33px] text-[#C7C6D3]"
+                >Resume
+              </span>
+            </div>
+
+            <h2
+              class="mt-[22px] max-w-[760px] bg-gradient-to-r from-[#E1BAC5] to-[#CEC4EF] bg-clip-text font-Syne text-[54px] font-bold leading-[64.8px] text-transparent"
+            >
+              Education and practical experience
+            </h2>
+
+            <div
+              class="mt-[4.2rem] block font-Syne text-[2.2rem] font-normal leading-[30.8px] text-[#C7C6D3]"
+            >
+              Be what you would seem to be - or, if you'd like it put more
+              simply - never imagine yourself not to be otherwise than what it
+              might appear to others that what you were or
+
+              <a href="#" class="group relative inline-block"
+                >might have been
+                <span
+                  class="abosolute bottom-0 left-0 z-[0] block h-[0.1px] w-full transform bg-[#8B8A91]"
+                ></span>
+                <span
+                  class="abosolute bottom-0 left-0 z-[1] block h-[0.1px] w-full origin-left scale-x-0 transform bg-[#C7C6D3] transition-transform duration-300 group-hover:scale-x-100"
+                ></span>
+              </a>
+
+              was not otherwise than what you had been would have appeared to
+              them to be otherwise.
+            </div>
+          </div>
+
+          <div class="mb-[146px] pl-[5rem] pr-[8rem]">
+            <h3
+              class="mb-[39px] max-w-[760px] font-Syne text-[3.8rem] font-bold leading-[45.6px] text-[#e9e9f1]"
+            >
+              My Education
+            </h3>
+
+            <div class="flex flex-col font-Syne text-[#C7C6D3]">
+              <div
+                class="flex border-b border-t border-solid border-[#303033] pb-[43px] pt-[44px]"
+              >
+                <div
+                  class="mt-[0.4rem] w-[16.66666667%] font-Syne text-[1.5rem] font-normal leading-[15px]"
+                >
+                  2015-2016
+                </div>
+                <div class="w-[41.66666667%] pr-[50px]">
+                  <p
+                    class="text-[22px] font-bold leading-[26.4px] text-[#e9e9f1]"
+                  >
+                    Drawing Concentration
+                  </p>
+                  <p class="text-[15px] font-normal leading-[21px]">
+                    Course by
+                    <a
+                      href="#"
+                      class="group relative inline-block text-[#e9e9f1]"
+                      >New York Academy of Art
+
+                      <span
+                        class="abosolute bottom-0 left-0 z-[1] block h-[0.1px] w-full origin-left scale-x-0 transform bg-[#C7C6D3] transition-transform duration-300 group-hover:scale-x-100"
+                      ></span
+                    ></a>
+                  </p>
+                </div>
+                <p
+                  class="w-[41.66666667%] text-[18px] font-normal leading-[25.2px]"
+                >
+                  Intensive drawing courses that present the fundamental
+                  principles of drawing.
+                </p>
+              </div>
+              <div
+                class="flex border-b border-solid border-[#303033] pb-[43px] pt-[44px]"
+              >
+                <div
+                  class="mt-[0.4rem] w-[16.66666667%] font-Syne text-[1.5rem] font-normal leading-[15px]"
+                >
+                  2019-2021
+                </div>
+                <div class="w-[41.66666667%] pr-[50px]">
+                  <p
+                    class="text-[22px] font-bold leading-[26.4px] text-[#e9e9f1]"
+                  >
+                    UI/UX Design Specialization
+                  </p>
+                  <p class="text-[15px] font-normal leading-[21px]">
+                    Course by
+                    <a
+                      href="#"
+                      class="group relative inline-block text-[#e9e9f1]"
+                      >California Institute of Arts
+
+                      <span
+                        class="abosolute bottom-0 left-0 z-[1] block h-[0.1px] w-full origin-left scale-x-0 transform bg-[#C7C6D3] transition-transform duration-300 group-hover:scale-x-100"
+                      ></span
+                    ></a>
+                  </p>
+                </div>
+                <p
+                  class="w-[41.66666667%] text-[18px] font-normal leading-[25.2px]"
+                >
+                  Research, design, and prototype effective, visually-driven
+                  websites and apps.
+                </p>
+              </div>
+              <div
+                class="flex border-b border-solid border-[#303033] pb-[43px] pt-[44px]"
+              >
+                <div
+                  class="mt-[0.4rem] w-[16.66666667%] font-Syne text-[1.5rem] font-normal leading-[15px]"
+                >
+                  2022
+                </div>
+                <div class="w-[41.66666667%] pr-[50px]">
+                  <p
+                    class="text-[22px] font-bold leading-[26.4px] text-[#e9e9f1]"
+                  >
+                    UI/UX Designer
+                  </p>
+                  <p
+                    class="text-[15px] font-normal leading-[21px] text-[#e9e9f1]"
+                  >
+                    Course by
+                    <a
+                      href="#"
+                      class="group relative inline-block text-[#C7C6D3]"
+                      >Coursera
+                      <span
+                        class="abosolute bottom-0 left-0 z-[1] block h-[0.1px] w-full origin-left scale-x-0 transform bg-[#C7C6D3] transition-transform duration-300 group-hover:scale-x-100"
+                      ></span>
+                    </a>
+                  </p>
+                </div>
+                <p
+                  class="w-[41.66666667%] text-[18px] font-normal leading-[25.2px]"
+                >
+                  This course is about how to complete the design process from
+                  beginning to end.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-[146px] pl-[5rem] pr-[8rem]">
+            <h3
+              class="mb-[39px] max-w-[760px] font-Syne text-[3.8rem] font-bold leading-[45.6px] text-[#e9e9f1]"
+            >
+              Work experience
+            </h3>
+
+            <div class="flex flex-col font-Syne text-[#C7C6D3]">
+              <div
+                class="flex border-b border-t border-solid border-[#303033] pb-[43px] pt-[44px]"
+              >
+                <div
+                  class="mt-[0.4rem] w-[16.66666667%] font-Syne text-[1.5rem] font-normal leading-[15px]"
+                >
+                  2018 - 2019
+                </div>
+
+                <div class="w-[41.66666667%] pr-[50px]">
+                  <p
+                    class="text-[22px] font-bold leading-[26.4px] text-[#e9e9f1]"
+                  >
+                    Illustrator
+                  </p>
+                  <p class="text-[15px] font-normal leading-[21px]">
+                    in the
+                    <a
+                      href="#"
+                      class="group relative inline-block text-[#e9e9f1]"
+                    >
+                      Creative Mind
+
+                      <span
+                        class="abosolute bottom-0 left-0 z-[1] block h-[0.1px] w-full origin-left scale-x-0 transform bg-[#C7C6D3] transition-transform duration-300 group-hover:scale-x-100"
+                      ></span
+                    ></a>
+                    agency
+                  </p>
+                </div>
+                <p
+                  class="w-[41.66666667%] text-[18px] font-normal leading-[25.2px]"
+                >
+                  I created original images for a range of digital and printed
+                  products.
+                </p>
+              </div>
+
+              <div
+                class="flex border-b border-solid border-[#303033] pb-[43px] pt-[44px]"
+              >
+                <div
+                  class="mt-[0.4rem] w-[16.66666667%] font-Syne text-[1.5rem] font-normal leading-[15px]"
+                >
+                  2019 - 2021
+                </div>
+                <div class="w-[41.66666667%] pr-[50px]">
+                  <p
+                    class="text-[22px] font-bold leading-[26.4px] text-[#e9e9f1]"
+                  >
+                    Graphic Designer
+                  </p>
+                  <p class="text-[15px] font-normal leading-[21px]">
+                    in the
+                    <a
+                      href="#"
+                      class="group relative inline-block text-[#e9e9f1]"
+                      >Moon Light
+
+                      <span
+                        class="abosolute bottom-0 left-0 z-[1] block h-[0.1px] w-full origin-left scale-x-0 transform bg-[#C7C6D3] transition-transform duration-300 group-hover:scale-x-100"
+                      ></span
+                    ></a>
+                    agency
+                  </p>
+                </div>
+                <p
+                  class="w-[41.66666667%] text-[18px] font-normal leading-[25.2px]"
+                >
+                  Research, design, and prototype effective, visually-driven
+                  websites and apps.
+                </p>
+              </div>
+
+              <div
+                class="flex border-b border-solid border-[#303033] pb-[43px] pt-[44px]"
+              >
+                <div
+                  class="mt-[0.4rem] w-[16.66666667%] font-Syne text-[1.5rem] font-normal leading-[15px]"
+                >
+                  2021 - now
+                </div>
+                <div class="w-[41.66666667%] pr-[50px]">
+                  <p
+                    class="text-[22px] font-bold leading-[26.4px] text-[#e9e9f1]"
+                  >
+                    UI/UX Designer
+                  </p>
+                  <p
+                    class="text-[15px] font-normal leading-[21px] text-[#e9e9f1]"
+                  >
+                    in the
+                    <a
+                      href="#"
+                      class="group relative inline-block text-[#C7C6D3]"
+                      >Moon Light
+                      <span
+                        class="abosolute bottom-0 left-0 z-[1] block h-[0.1px] w-full origin-left scale-x-0 transform bg-[#C7C6D3] transition-transform duration-300 group-hover:scale-x-100"
+                      ></span>
+                    </a>
+                    agency
+                  </p>
+                </div>
+                <p
+                  class="w-[41.66666667%] text-[18px] font-normal leading-[25.2px]"
+                >
+                  I am actively involved in creating user interfaces for mobile
+                  apps and websites.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pl-[5rem] pr-[8rem]">
+            <h3
+              class="mb-[20px] max-w-[760px] font-Syne text-[3.8rem] font-bold leading-[45.6px] text-[#e9e9f1]"
+            >
+              My favorite tools
+            </h3>
+          </div>
+          <div class="pl-[2.5rem] pr-[5.5rem]">
+            <div
+              class="flex flex-wrap px-[1.5rem] font-Syne text-[18px] font-bold leading-[18px] text-[#e9e9f1]"
+            >
+              <div class="mt-[20px] w-[20%] px-[10px]">
+                <div
+                  class="w-full rounded-[3.6rem] border border-solid border-[#303033] bg-[#111111] p-[30px]"
+                >
+                  <img
+                    src="./images/icon-photoshop.svg"
+                    class="mx-auto h-[6rem] w-[8rem] object-cover"
+                    alt=""
+                  />
+                  <p class="mt-[15px] block text-center">Photoshop</p>
+                </div>
+              </div>
+
+              <div class="mt-[20px] w-[20%] px-[10px]">
+                <div
+                  class="w-full rounded-[3.6rem] border border-solid border-[#303033] bg-[#111111] p-[30px]"
+                >
+                  <img
+                    src="./images/icon-figma.svg"
+                    class="mx-auto h-[6rem] w-[8rem] object-cover"
+                    alt=""
+                  />
+                  <p class="mt-[15px] block text-center">Figma</p>
+                </div>
+              </div>
+
+              <div class="mt-[20px] w-[20%] px-[10px]">
+                <div
+                  class="w-full rounded-[3.6rem] border border-solid border-[#303033] bg-[#111111] p-[30px]"
+                >
+                  <img
+                    src="./images/icon-illustrator.svg"
+                    class="mx-auto h-[6rem] w-[8rem] object-cover"
+                    alt=""
+                  />
+                  <p class="mt-[15px] block text-center">Illustrator</p>
+                </div>
+              </div>
+
+              <div class="mt-[20px] w-[20%] px-[10px]">
+                <div
+                  class="w-full rounded-[3.6rem] border border-solid border-[#303033] bg-[#111111] p-[30px]"
+                >
+                  <img
+                    src="./images/icon-scketch.svg"
+                    class="mx-auto h-[6rem] w-[8rem] object-cover"
+                    alt=""
+                  />
+                  <p class="mt-[15px] block text-center">Sketch</p>
+                </div>
+              </div>
+
+              <div class="mt-[20px] w-[20%] px-[10px]">
+                <div
+                  class="w-full rounded-[3.6rem] border border-solid border-[#303033] bg-[#111111] p-[30px]"
+                >
+                  <img
+                    src="./images/icon-blender.svg"
+                    class="mx-auto h-[6rem] w-[8rem] object-cover"
+                    alt=""
+                  />
+                  <p class="mt-[15px] block text-center">Blender</p>
+                </div>
+              </div>
+
+              <div class="mt-[20px] w-[20%] px-[10px]">
+                <div
+                  class="w-full rounded-[3.6rem] border border-solid border-[#303033] bg-[#111111] p-[30px]"
+                >
+                  <img
+                    src="./images/icon-html.svg"
+                    class="mx-auto h-[6rem] w-[8rem] object-cover"
+                    alt=""
+                  />
+                  <p class="mt-[15px] block text-center">HTML5</p>
+                </div>
+              </div>
+
+              <div class="mt-[20px] w-[20%] px-[10px]">
+                <div
+                  class="w-full rounded-[3.6rem] border border-solid border-[#303033] bg-[#111111] p-[30px]"
+                >
+                  <img
+                    src="./images/icon-css.svg"
+                    class="mx-auto h-[6rem] w-[8rem] object-cover"
+                    alt=""
+                  />
+                  <p class="mt-[15px block] text-center">CSS3</p>
+                </div>
+              </div>
+
+              <div class="mt-[20px] w-[20%] px-[10px]">
+                <div
+                  class="w-full rounded-[3.6rem] border border-solid border-[#303033] bg-[#111111] p-[30px]"
+                >
+                  <img
+                    src="./images/icon-notion.svg"
+                    class="mx-auto h-[6rem] w-[8rem] object-cover"
+                    alt=""
+                  />
+                  <p class="mt-[15px] block text-center">Notion</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

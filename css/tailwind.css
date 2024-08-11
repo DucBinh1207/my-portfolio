@@ -1,4 +1,5 @@
 /* css/tailwind.css */
+@import "./base.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,3 +7,31 @@
 /* .bg_blur {
   @apply absolute h-4 w-3 bg-red-400;
 } */
+
+.portfolio-section {
+  @apply absolute bottom-[30px] flex w-[calc(100%-50px)] items-center justify-start gap-[10px] px-[30px];
+}
+
+.portfolio-tag {
+  @apply block rounded-[15px] px-[14px] pb-[10px] pt-[9px] font-Syne text-[15px] font-normal leading-[15px];
+}
+
+.about-item {
+  @apply inline-flex h-[100%] w-[100%] flex-col items-start gap-[5px] self-stretch rounded-[36px] border border-solid border-[#303033] p-[31px] text-white;
+}
+
+.about-item-number {
+  @apply bg-gradientAbout w-[100%] bg-clip-text text-center font-Syne text-[70px] font-bold lining-nums leading-[70px] tracking-[-2px] text-transparent;
+}
+
+.about-item-text {
+  @apply bg-gradientAbout w-[100%] bg-clip-text text-center font-Syne text-[18px] font-bold lining-nums leading-[21.6px] text-transparent;
+}
+
+.about-tag-section {
+  @apply flex w-[100%] items-center justify-start gap-[10px];
+}
+
+.about-tag {
+  @apply block rounded-[15px] border border-solid border-[#8B8A91] px-[14px] pb-[10px] pt-[9px] font-Syne text-[15px] font-normal leading-[15px];
+}

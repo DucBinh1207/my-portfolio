@@ -11,15 +11,6 @@ module.exports = {
       colors: {
         common: "#E9E9F1",
         bgColor: "#161616",
-        blue: "#1fb6ff",
-        purple: "#7e5bef",
-        pink: "#ff49db",
-        orange: "#ff7849",
-        green: "#13ce66",
-        yellow: "#ffc82c",
-        "gray-dark": "#273444",
-        gray: "#8492a6",
-        "gray-light": "#d3dce6",
       },
 
       fontFamily: {
@@ -56,6 +47,21 @@ module.exports = {
         second_animate_bg: "second_animate_bg 15s linear infinite",
         third_animate_bg: "third_animate_bg 15s linear infinite",
       },
+      gridTemplateRows: {
+        form: "repeat(2, 50%)",
+        formAbout: "repeat(2, 620px)",
+      },
+      gridTemplateColumns: {
+        form: "repeat(2, 50%)",
+      },
+      backgroundImage: {
+        portfolio1: "url('/images/portfolio1.png')",
+        portfolio2: "url('/images/portfolio2.png')",
+        portfolio3: "url('/images/portfolio3.png')",
+        portfolio4: "url('/images/portfolio4.png')",
+        gradientAbout: "linear-gradient(15deg, #E1BAC5 0%, #CEC4EF 80%)",
+      },
+      background: {},
     },
   },
   plugins: [
